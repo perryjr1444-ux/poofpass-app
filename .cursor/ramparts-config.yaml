@@ -88,7 +88,7 @@ scanning:
 # Reporting Configuration
 reporting:
   format: "detailed"  # "summary", "detailed", "json"
-  output_file: "/Users/thomasperryjr/poofpass-app/.cursor/security-report.md"
+  output_file: "/Users/thomasperryjr/quelly-app/.cursor/security-report.md"
   include_recommendations: true
   include_remediation_steps: true
   include_severity_breakdown: true
@@ -177,7 +177,7 @@ alerting:
     
     - type: "file"
       level: "WARNING"
-      path: "/Users/thomasperryjr/poofpass-app/.cursor/security-alerts.log"
+      path: "/Users/thomasperryjr/quelly-app/.cursor/security-alerts.log"
     
     - type: "webhook"
       level: "CRITICAL"
@@ -202,7 +202,7 @@ logging:
   level: "INFO"  # "DEBUG", "INFO", "WARNING", "ERROR"
   format: "structured"  # "text", "json", "structured"
   output: "file"  # "console", "file", "both"
-  file_path: "/Users/thomasperryjr/poofpass-app/.cursor/ramparts.log"
+  file_path: "/Users/thomasperryjr/quelly-app/.cursor/ramparts.log"
   max_file_size: "10MB"
   max_files: 5
   

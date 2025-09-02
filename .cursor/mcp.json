@@ -11,16 +11,16 @@
       "command": "ramparts",
       "args": ["mcp-stdio"],
       "env": {
-        "RAMPARTS_CONFIG": "/Users/thomasperryjr/poofpass-app/.cursor/ramparts-config.yaml"
+        "RAMPARTS_CONFIG": "/Users/thomasperryjr/quelly-app/.cursor/ramparts-config.yaml"
       }
     },
     "filesystem": {
       "command": "npx",
-      "args": ["@modelcontextprotocol/server-filesystem", "/Users/thomasperryjr/poofpass-app"]
+      "args": ["@modelcontextprotocol/server-filesystem", "/Users/thomasperryjr/quelly-app"]
     },
     "git": {
       "command": "npx",
-      "args": ["@modelcontextprotocol/server-git", "--repository", "/Users/thomasperryjr/poofpass-app"]
+      "args": ["@modelcontextprotocol/server-git", "--repository", "/Users/thomasperryjr/quelly-app"]
     },
     "supabase": {
       "command": "npx",

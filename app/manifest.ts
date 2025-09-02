@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'PoofPass',
-    short_name: 'PoofPass',
+    name: 'Quelly',
+    short_name: 'Quelly',
     description: 'Disposable passwords made simple',
     start_url: '/',
     display: 'standalone',

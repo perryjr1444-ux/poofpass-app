@@ -9,11 +9,11 @@
     },
     "filesystem": {
       "command": "npx",
-      "args": ["@modelcontextprotocol/server-filesystem", "/Users/thomasperryjr/poofpass-app"]
+      "args": ["@modelcontextprotocol/server-filesystem", "/Users/thomasperryjr/quelly-app"]
     },
     "git": {
       "command": "npx",
-      "args": ["@modelcontextprotocol/server-git", "--repository", "/Users/thomasperryjr/poofpass-app"]
+      "args": ["@modelcontextprotocol/server-git", "--repository", "/Users/thomasperryjr/quelly-app"]
     }
   }
 }
