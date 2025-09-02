@@ -37,7 +37,7 @@ interface AuthenticationOptions {
 }
 
 export class WebAuthnService {
-  private static readonly RP_NAME = 'PoofPass';
+  private static readonly RP_NAME = 'Quelly';
   private static readonly RP_ID = process.env.NEXT_PUBLIC_APP_DOMAIN || 'localhost';
   private static readonly TIMEOUT = 60000; // 60 seconds
   private static readonly CHALLENGE_LENGTH = 32;

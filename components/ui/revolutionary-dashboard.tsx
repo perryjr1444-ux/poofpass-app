@@ -143,7 +143,7 @@ export default function RevolutionaryDashboard() {
               <div className="flex items-center space-x-2">
                 <Crown className="h-8 w-8 text-yellow-500" />
                 <h1 className="text-2xl font-bold text-slate-900 dark:text-white">
-                  PoofPass Revolutionary Dashboard
+                  Quelly Revolutionary Dashboard
                 </h1>
               </div>
               <Badge variant="default" className="bg-gradient-to-r from-purple-500 to-pink-500">

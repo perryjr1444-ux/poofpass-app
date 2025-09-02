@@ -161,7 +161,7 @@ export default function AdvancedDashboard() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-4">
               <h1 className="text-2xl font-bold text-slate-900 dark:text-white">
-                PoofPass Dashboard
+                Quelly Dashboard
               </h1>
               <Badge variant={wsConnected ? "default" : "secondary"}>
                 {wsConnected ? "Connected" : "Offline"}

@@ -95,7 +95,7 @@ export class LoginDetectorService {
    */
   static createBrowserExtensionScript(): string {
     return `
-      // PoofPass Login Detection Script
+      // Quelly Login Detection Script
       // This script runs in the browser to detect login attempts
       
       (function() {
@@ -120,18 +120,18 @@ export class LoginDetectorService {
           
           if (!password) return;
           
-          // Check if this password is managed by PoofPass
-          checkPoofPassPassword(password, window.location.hostname);
+          // Check if this password is managed by Quelly
+          checkQuellyPassword(password, window.location.hostname);
         });
         
-        // Check if password is managed by PoofPass
-        async function checkPoofPassPassword(password, domain) {
+        // Check if password is managed by Quelly
+        async function checkQuellyPassword(password, domain) {
           try {
-            // This would check against PoofPass database
+            // This would check against Quelly database
             // For now, we'll simulate the detection
             
             // In a real implementation, this would:
-            // 1. Check if the password is in the user's PoofPass vault
+            // 1. Check if the password is in the user's Quelly vault
             // 2. If yes, trigger automatic rotation
             // 3. Notify the user of the rotation
             

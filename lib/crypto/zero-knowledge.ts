@@ -267,7 +267,7 @@ export class ZeroKnowledgeService {
     };
     
     const { encrypted, nonce } = this.encryptClientSide(data, backupKey);
-    const backup = `POOFPASS_BACKUP_V1:${nonce}:${encrypted}`;
+    const backup = `QUELLY_BACKUP_V1:${nonce}:${encrypted}`;
     
     // Create checksum for integrity verification
     const checksum = crypto.createHash('sha256')
@@ -298,7 +298,7 @@ export class ZeroKnowledgeService {
     
     // Parse backup format
     const parts = backup.split(':');
-    if (parts[0] !== 'POOFPASS_BACKUP_V1') {
+    if (parts[0] !== 'QUELLY_BACKUP_V1') {
       throw new Error('Invalid backup format');
     }
     

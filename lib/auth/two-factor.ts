@@ -46,7 +46,7 @@ export class TwoFactorAuth {
     });
     
     // Generate QR code URL
-    const issuer = 'PoofPass';
+    const issuer = 'Quelly';
     const { data: user } = await supabase.auth.admin.getUserById(userId);
     const accountName = user?.user?.email || userId;
     
