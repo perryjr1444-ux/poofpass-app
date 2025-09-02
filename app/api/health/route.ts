@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  return NextResponse.json({ ok: true, message: 'PoofPass API is healthy' });
+  return NextResponse.json({ ok: true, message: 'Quelly API is healthy' });
 }

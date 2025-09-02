@@ -1,12 +1,12 @@
-# PoofPass v1 — Product Requirements Document (PRD)
+# Quelly v1 — Product Requirements Document (PRD)
 
 Version: 1.0
-Owner: PoofPass Team
+Owner: Quelly Team
 Date: 2025-09-01
 Status: Draft
 
 ## 1. Overview
-PoofPass is a disposable password and session utility designed for secure creation, rotation, and distribution of short-lived credentials. It provides a web application, REST-ish API (Next.js App Router), Supabase Edge Functions (for secrets handling and OTAC sessions), a local bridge service, and a Chrome extension for session handoff via cookie bundles.
+Quelly is a disposable password and session utility designed for secure creation, rotation, and distribution of short-lived credentials. It provides a web application, REST-ish API (Next.js App Router), Supabase Edge Functions (for secrets handling and OTAC sessions), a local bridge service, and a Chrome extension for session handoff via cookie bundles.
 
 Core principles:
 - Zero Trust, pointer-based secret architecture
@@ -41,7 +41,7 @@ Developers and teams need a safe way to issue, use, and rotate temporary credent
 - Web App (Next.js 14, TypeScript, Tailwind, shadcn/ui).
 - API (Next.js App Router routes; OpenAPI doc in docs/openapi.yaml).
 - Supabase Edge Functions (vault-store, vault-reveal, otac-issue, otac-claim, otac-status).
-- Chrome Extension (PoofPass Bridge) + Local Bridge (FastAPI) for cookie bundle handoff.
+- Chrome Extension (Quelly Bridge) + Local Bridge (FastAPI) for cookie bundle handoff.
 - Database (Supabase): public + vault schemas with strict RLS; billing/credits/entitlements (Stripe).
 
 ## 7. Architecture (High-Level)
@@ -52,7 +52,7 @@ Developers and teams need a safe way to issue, use, and rotate temporary credent
 - Chrome Extension fetches bundles from the Local Bridge, validates eTLD+1, and writes cookies.
 
 Key components:
-- poofpass-app (web/app/api, supabase, docs)
+- quelly-app (web/app/api, supabase, docs)
 - poofpass (core utilities, Totp, DSL, Chrome extension, local bridge)
 - poofpass-handshake (prototype: quantum-inspired session proofs demo)
 - poofpass-landing (static marketing site)
