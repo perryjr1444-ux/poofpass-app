@@ -626,7 +626,7 @@ export class BackupRecoveryService {
               });
             itemsRestored++;
           } catch (error) {
-            errors.push(`Failed to restore password ${password.id}: ${error.message}`);
+            errors.push(`Failed to restore password ${password.id}: ${error instanceof Error ? error.message : String(error)}`);
           }
         }
       }
@@ -644,7 +644,7 @@ export class BackupRecoveryService {
               });
             itemsRestored++;
           } catch (error) {
-            errors.push(`Failed to restore setting ${setting.id}: ${error.message}`);
+            errors.push(`Failed to restore setting ${setting.id}: ${error instanceof Error ? error.message : String(error)}`);
           }
         }
       }
@@ -656,7 +656,7 @@ export class BackupRecoveryService {
       };
       
     } catch (error) {
-      errors.push(`Restoration failed: ${error.message}`);
+      errors.push(`Restoration failed: ${error instanceof Error ? error.message : String(error)}`);
       return {
         restored: false,
         itemsRestored,

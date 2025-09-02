@@ -9,6 +9,9 @@
  * - Update handling
  */
 
+// Service Worker global declarations
+declare const self: any;
+
 const CACHE_NAME = 'poofpass-v1';
 const STATIC_CACHE = 'poofpass-static-v1';
 const DYNAMIC_CACHE = 'poofpass-dynamic-v1';
