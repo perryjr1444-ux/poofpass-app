@@ -1,4 +1,4 @@
-# PoofPass Deployment Guide
+# Quelly Deployment Guide
 
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
@@ -30,8 +30,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-org/poofpass-app.git
-cd poofpass-app
+git clone https://github.com/your-org/quelly-app.git
+cd quelly-app
 ```
 
 ### 2. Install Dependencies
@@ -125,14 +125,14 @@ In Vercel dashboard:
 
 #### 1. Build Docker Image
 ```bash
-docker build -t poofpass:latest .
+docker build -t quelly:latest .
 ```
 
 #### 2. Run Container
 ```bash
 docker run -p 3000:3000 \
   --env-file .env.production \
-  poofpass:latest
+  quelly:latest
 ```
 
 ### Option 3: Traditional VPS
@@ -152,7 +152,7 @@ npm install -g pm2
 #### 3. Build and Start
 ```bash
 npm run build
-pm2 start npm --name poofpass -- start
+pm2 start npm --name quelly -- start
 pm2 save
 pm2 startup
 ```
@@ -220,7 +220,7 @@ DATADOG_APP_KEY=your-app-key
 Configure structured logging:
 ```bash
 # Production logs
-pm2 logs poofpass
+pm2 logs quelly
 ```
 
 ### 5. Alerting
@@ -306,9 +306,9 @@ LOG_LEVEL=debug
 ### Support
 
 For production support:
-- Email: support@poofpass.com
-- Documentation: https://docs.poofpass.com
-- Status Page: https://status.poofpass.com
+- Email: support@quelly.com
+- Documentation: https://docs.quelly.com
+- Status Page: https://status.quelly.com
 
 ## Maintenance
 

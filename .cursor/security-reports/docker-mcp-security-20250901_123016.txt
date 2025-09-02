@@ -1,4 +1,4 @@
-📁 Working Directory: poofpass-app
+📁 Working Directory: quelly-app
 🐳 Docker CLI: Ready for Docker operations
 🔧 Executing: docker-containers --all
 ❌ Error: [DOCKER-CMD] docker ps -a --format 'table {{.ID}}	{{.Image}}	{{.Command}}	{{.CreatedAt}}	{{.Status}}	{{.Ports}}	{{.Names}}' | 60ms

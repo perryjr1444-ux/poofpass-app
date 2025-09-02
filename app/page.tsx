@@ -112,7 +112,7 @@ function Step({ num, title, code }: { num: number; title: string; code: string }
 
 function CodeCard() {
   const [copied, setCopied] = useState(false);
-  const code = `curl -X POST https://app.poofpass.com/api/check/verify \\
+  const code = `curl -X POST https://app.quelly.com/api/check/verify \\
   -H "Content-Type: application/json" \\
   -H "Authorization: Bearer $TOKEN" \\
   -d '{"id":"$CRED_ID","secret":"$SECRET","rotate":true}'`;
@@ -144,7 +144,7 @@ function Testimonial() {
   return (
     <div className="rounded-lg border p-6 bg-white/50 dark:bg-white/5">
       <div className="text-sm uppercase tracking-wide text-gray-500">Trusted by devs</div>
-      <blockquote className="mt-3 text-lg font-medium">“PoofPass let us ship secret rotation in a day instead of a sprint.”</blockquote>
+      <blockquote className="mt-3 text-lg font-medium">“Quelly let us ship secret rotation in a day instead of a sprint.”</blockquote>
       <div className="mt-4 flex items-center gap-3">
         <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-400 to-purple-600" />
         <div className="text-sm">

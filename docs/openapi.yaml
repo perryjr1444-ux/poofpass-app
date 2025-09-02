@@ -1,8 +1,8 @@
 openapi: 3.1.0
 info:
-  title: PoofPass API
+  title: Quelly API
   description: |
-    PoofPass is a secure disposable password management system with automatic rotation,
+    Quelly is a secure disposable password management system with automatic rotation,
     zero-trust verification, and enterprise-grade security features.
     
     ## Authentication
@@ -17,13 +17,13 @@ info:
     All endpoints return consistent error responses with error codes and messages.
   version: 1.0.0
   contact:
-    email: support@poofpass.com
+    email: support@quelly.com
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
 
 servers:
-  - url: https://api.poofpass.com
+  - url: https://api.quelly.com
     description: Production server
   - url: http://localhost:3000
     description: Development server

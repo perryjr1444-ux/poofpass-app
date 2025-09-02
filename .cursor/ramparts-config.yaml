@@ -1,4 +1,4 @@
-# Ramparts Security Configuration for PoofPass
+# Ramparts Security Configuration for Quelly
 # Comprehensive security assessment and monitoring
 
 # LLM Configuration for Security Analysis
@@ -56,7 +56,7 @@ security:
 
 # MCP Server Scanning Configuration
 scanning:
-  # PoofPass-specific security patterns
+  # Quelly-specific security patterns
   custom_patterns:
     - name: "password_rotation_bypass"
       pattern: ".*password.*rotation.*bypass.*"
@@ -93,7 +93,7 @@ reporting:
   include_remediation_steps: true
   include_severity_breakdown: true
   
-  # Custom security metrics for PoofPass
+  # Custom security metrics for Quelly
   custom_metrics:
     - name: "password_security_score"
       description: "Overall password security assessment"
@@ -150,7 +150,7 @@ monitoring:
     - security_score_drops
     - suspicious_activity
   
-  # PoofPass-specific monitoring
+  # Quelly-specific monitoring
   custom_monitors:
     - name: "password_rotation_health"
       description: "Monitor password rotation system health"

@@ -1,6 +1,6 @@
 {
-  "name": "PoofPass - Disposable Passwords",
-  "short_name": "PoofPass",
+  "name": "Quelly - Disposable Passwords",
+  "short_name": "Quelly",
   "description": "Secure disposable password management with zero-trust architecture",
   "start_url": "/",
   "display": "standalone",
@@ -124,7 +124,7 @@
   },
   "protocol_handlers": [
     {
-      "protocol": "web+poofpass",
+      "protocol": "web+quelly",
       "url": "/handle?protocol=%s"
     }
   ],

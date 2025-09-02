@@ -34,7 +34,7 @@ function Footer() {
     <footer className="border-t py-6 text-sm text-gray-500">
       <div className="mx-auto max-w-5xl px-4 flex items-center justify-between">
         <span>© {new Date().getFullYear()} Hashword</span>
-        <a href={`mailto:${process.env.NEXT_PUBLIC_SUPPORT_EMAIL || 'support@poofpass.com'}`}>{process.env.NEXT_PUBLIC_SUPPORT_EMAIL || 'support@poofpass.com'}</a>
+        <a href={`mailto:${process.env.NEXT_PUBLIC_SUPPORT_EMAIL || 'support@quelly.com'}`}>{process.env.NEXT_PUBLIC_SUPPORT_EMAIL || 'support@quelly.com'}</a>
       </div>
     </footer>
   )

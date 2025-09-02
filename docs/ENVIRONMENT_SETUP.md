@@ -47,7 +47,7 @@ NEXT_PUBLIC_POSTHOG_HOST=https://us.i.posthog.com
 
 ```bash
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
-NEXT_PUBLIC_SUPPORT_EMAIL=support@poofpass.com
+NEXT_PUBLIC_SUPPORT_EMAIL=support@quelly.com
 OTAC_TTL_SECONDS=90
 # Internal function auth (used by edge functions)
 INTERNAL_FUNCTION_SECRET=generate-a-strong-random

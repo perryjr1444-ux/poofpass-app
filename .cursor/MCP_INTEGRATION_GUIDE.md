@@ -1,4 +1,4 @@
-# PoofPass MCP Integration Guide
+# Quelly MCP Integration Guide
 
 ## 🚀 **Complete MCP Server Setup for Cursor**
 
@@ -149,7 +149,7 @@ ramparts scan-config --debug           # Debug mode with JSON-RPC logs
 
 ### **Ramparts Security Configuration** (`.cursor/ramparts-config.yaml`)
 - Comprehensive security assessment settings
-- Custom security patterns for PoofPass
+- Custom security patterns for Quelly
 - Continuous monitoring configuration
 - Alerting and reporting settings
 
@@ -193,7 +193,7 @@ npx @modelcontextprotocol/server-filesystem --help
 The Ramparts configuration includes:
 - **5-minute interval** security checks
 - **Real-time alerts** for critical issues
-- **Custom security patterns** for PoofPass
+- **Custom security patterns** for Quelly
 - **Comprehensive logging** of all security events
 
 ## 🎯 **AI-Powered Development Workflow**
@@ -327,7 +327,7 @@ ramparts scan-config --debug --verbose
 - **MCP Documentation**: https://modelcontextprotocol.io/
 - **Ramparts Documentation**: https://github.com/getjavelin/ramparts
 - **Docker MCP Server**: https://www.npmjs.com/package/@0xshariq/docker-mcp-server
-- **PoofPass Security**: See `.cursor/ramparts-config.yaml` for detailed security configuration
+- **Quelly Security**: See `.cursor/ramparts-config.yaml` for detailed security configuration
 
 ---
 

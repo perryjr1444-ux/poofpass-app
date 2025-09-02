@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# PoofPass Comprehensive Security Assessment Script
+# Quelly Comprehensive Security Assessment Script
 # Uses Ramparts to scan MCP servers and generate security reports
 
 set -e
 
-echo "🔐 PoofPass Security Assessment Starting..."
+echo "🔐 Quelly Security Assessment Starting..."
 echo "=============================================="
 
 # Colors for output
@@ -119,24 +119,24 @@ run_security_scan "Ramparts MCP" \
     "ramparts scan-config --verbose" \
     "$REPORT_DIR/ramparts-security-$TIMESTAMP.txt"
 
-# 3. PoofPass System Security Assessment
-echo -e "\n${YELLOW}🔐 Phase 3: PoofPass System Security Assessment${NC}"
-log_message "INFO" "Starting PoofPass system security assessment"
+# 3. Quelly System Security Assessment
+echo -e "\n${YELLOW}🔐 Phase 3: Quelly System Security Assessment${NC}"
+log_message "INFO" "Starting Quelly system security assessment"
 
 # Create comprehensive security report
-SECURITY_REPORT="$REPORT_DIR/poofpass-security-assessment-$TIMESTAMP.md"
+SECURITY_REPORT="$REPORT_DIR/quelly-security-assessment-$TIMESTAMP.md"
 
 cat > "$SECURITY_REPORT" << EOF
-# PoofPass Security Assessment Report
+# Quelly Security Assessment Report
 Generated: $(date)
 
 ## Executive Summary
-This report provides a comprehensive security assessment of the PoofPass system, including MCP servers, Docker containers, and application security.
+This report provides a comprehensive security assessment of the Quelly system, including MCP servers, Docker containers, and application security.
 
 ## Assessment Scope
 - Docker MCP Server Security
 - Ramparts MCP Security Scanner
-- PoofPass Application Security
+- Quelly Application Security
 - Database Security (Supabase)
 - API Endpoint Security
 - Authentication & Authorization
@@ -154,7 +154,7 @@ $(cat "$REPORT_DIR/docker-mcp-security-$TIMESTAMP.txt" 2>/dev/null || echo "No D
 $(cat "$REPORT_DIR/ramparts-security-$TIMESTAMP.txt" 2>/dev/null || echo "No Ramparts security data available")
 \`\`\`
 
-### 3. PoofPass Application Security
+### 3. Quelly Application Security
 
 #### Password Security Features
 - ✅ AES-256-GCM encryption for all sensitive data
@@ -255,13 +255,13 @@ $(cat "$REPORT_DIR/ramparts-security-$TIMESTAMP.txt" 2>/dev/null || echo "No Ram
 
 ## Conclusion
 
-The PoofPass system demonstrates excellent security posture with comprehensive protection mechanisms. The implementation of automatic password rotation, hash-based security, and zero-knowledge architecture makes it truly revolutionary and secure.
+The Quelly system demonstrates excellent security posture with comprehensive protection mechanisms. The implementation of automatic password rotation, hash-based security, and zero-knowledge architecture makes it truly revolutionary and secure.
 
 **Overall Security Grade: A+ (95/100)**
 
 ---
 
-*This report was generated automatically by the PoofPass Security Assessment System*
+*This report was generated automatically by the Quelly Security Assessment System*
 EOF
 
 echo -e "${GREEN}✅ Comprehensive security report generated: $SECURITY_REPORT${NC}"
@@ -276,7 +276,7 @@ DASHBOARD_FILE="$REPORT_DIR/security-dashboard-$TIMESTAMP.json"
 cat > "$DASHBOARD_FILE" << EOF
 {
   "assessment_id": "$TIMESTAMP",
-  "system_name": "PoofPass",
+  "system_name": "Quelly",
   "assessment_date": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")",
   "overall_security_score": 95,
   "risk_level": "LOW",
@@ -335,8 +335,8 @@ echo -e "  2. Implement any recommendations"
 echo -e "  3. Set up continuous monitoring"
 echo -e "  4. Schedule regular assessments"
 
-echo -e "\n${GREEN}✅ PoofPass Security Assessment completed successfully!${NC}"
-log_message "INFO" "PoofPass Security Assessment completed successfully"
+echo -e "\n${GREEN}✅ Quelly Security Assessment completed successfully!${NC}"
+log_message "INFO" "Quelly Security Assessment completed successfully"
 
 # Make script executable
 chmod +x "$0"
