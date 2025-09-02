@@ -10,7 +10,7 @@
 Run these commands in exact order to set up the development environment:
 
 ```bash
-# 1. Install dependencies (takes ~35 seconds)
+# 1. Install dependencies (takes 35-60 seconds)
 npm install
 
 # 2. Set up environment variables
