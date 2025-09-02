@@ -1,10 +1,10 @@
-# PoofPass - The Revolutionary Unhackable Password System 🚀
+# Quelly - The Revolutionary Unhackable Password System 🚀
 
 **THE CORE REVOLUTIONARY CONCEPT**: Passwords that automatically rotate after each login attempt, making them truly unhackable by design.
 
 ## 🚀 The Revolutionary Concept
 
-PoofPass doesn't just store passwords - it makes them **obsolete and unhackable** by:
+Quelly doesn't just store passwords - it makes them **obsolete and unhackable** by:
 
 - **🔄 Automatic Rotation**: Passwords automatically rotate after each login attempt (success or failure)
 - **🛡️ Unhackable by Design**: Even if a password is stolen, it becomes useless after the next login
@@ -41,7 +41,7 @@ PoofPass doesn't just store passwords - it makes them **obsolete and unhackable*
 1. Create a Supabase project and grab your `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
 2. Copy `.env.example` → `.env.local` and fill in values. Never expose `SUPABASE_SERVICE_ROLE_KEY` to the browser.
 3. Apply the schema migration:
-   - If using Supabase SQL editor, open and run: `supabase/migrations/2025-08-26_poofpass.sql`.
+   - If using Supabase SQL editor, open and run: `supabase/migrations/2025-08-26_quelly.sql`.
    - If using the CLI, run:
      ```bash
      supabase db push

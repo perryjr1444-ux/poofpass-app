@@ -41,7 +41,7 @@ jobs:
       - name: OWASP ZAP Scan
         uses: zaproxy/action-full-scan@v0.8.0
         with:
-          target: 'https://staging.poofpass.com'
+          target: 'https://staging.quelly.com'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
         continue-on-error: true

@@ -182,7 +182,7 @@ jobs:
       - name: Run OWASP Dependency Check
         uses: dependency-check/Dependency-Check_Action@main
         with:
-          project: 'PoofPass'
+          project: 'Quelly'
           path: '.'
           format: 'HTML'
           
@@ -200,7 +200,7 @@ jobs:
     if: github.ref == 'refs/heads/develop' && github.event_name == 'push'
     environment:
       name: staging
-      url: https://staging.poofpass.com
+      url: https://staging.quelly.com
     steps:
       - uses: actions/checkout@v4
       
@@ -217,7 +217,7 @@ jobs:
         run: |
           npm run test:e2e:smoke
         env:
-          STAGING_URL: https://staging.poofpass.com
+          STAGING_URL: https://staging.quelly.com
 
   # Deploy to production (on main branch)
   deploy-production:
@@ -227,7 +227,7 @@ jobs:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     environment:
       name: production
-      url: https://poofpass.com
+      url: https://quelly.com
     steps:
       - uses: actions/checkout@v4
       
