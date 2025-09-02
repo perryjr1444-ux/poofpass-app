@@ -12,9 +12,9 @@
 // Service Worker global declarations
 declare const self: any;
 
-const CACHE_NAME = 'poofpass-v1';
-const STATIC_CACHE = 'poofpass-static-v1';
-const DYNAMIC_CACHE = 'poofpass-dynamic-v1';
+const CACHE_NAME = 'quelly-v1';
+const STATIC_CACHE = 'quelly-static-v1';
+const DYNAMIC_CACHE = 'quelly-dynamic-v1';
 
 // Assets to cache for offline use
 const STATIC_ASSETS = [

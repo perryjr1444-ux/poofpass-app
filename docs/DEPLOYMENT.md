@@ -1,4 +1,4 @@
-# PoofPass Deployment Guide
+# Quelly Deployment Guide
 
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
@@ -30,8 +30,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-org/poofpass-app.git
-cd poofpass-app
+git clone https://github.com/your-org/quelly-app.git
+cd quelly-app
 ```
 
 ### 2. Install Dependencies
@@ -306,9 +306,9 @@ LOG_LEVEL=debug
 ### Support
 
 For production support:
-- Email: support@poofpass.com
-- Documentation: https://docs.poofpass.com
-- Status Page: https://status.poofpass.com
+- Email: support@quelly.com
+- Documentation: https://docs.quelly.com
+- Status Page: https://status.quelly.com
 
 ## Maintenance
 

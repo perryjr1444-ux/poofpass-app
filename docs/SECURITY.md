@@ -1,8 +1,8 @@
-# PoofPass Security Documentation
+# Quelly Security Documentation
 
 ## Overview
 
-PoofPass implements defense-in-depth security with multiple layers of protection for disposable password management. This document outlines our security architecture, controls, and best practices.
+Quelly implements defense-in-depth security with multiple layers of protection for disposable password management. This document outlines our security architecture, controls, and best practices.
 
 ## Security Architecture
 

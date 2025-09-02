@@ -1,13 +1,13 @@
-# PoofPass Security Assessment Report
+# Quelly Security Assessment Report
 Generated: Mon Sep  1 12:30:17 CDT 2025
 
 ## Executive Summary
-This report provides a comprehensive security assessment of the PoofPass system, including MCP servers, Docker containers, and application security.
+This report provides a comprehensive security assessment of the Quelly system, including MCP servers, Docker containers, and application security.
 
 ## Assessment Scope
 - Docker MCP Server Security
 - Ramparts MCP Security Scanner
-- PoofPass Application Security
+- Quelly Application Security
 - Database Security (Supabase)
 - API Endpoint Security
 - Authentication & Authorization
@@ -42,7 +42,7 @@ Usage: ramparts scan-config [OPTIONS]
 For more information, try '--help'.
 ```
 
-### 3. PoofPass Application Security
+### 3. Quelly Application Security
 
 #### Password Security Features
 - ✅ AES-256-GCM encryption for all sensitive data
